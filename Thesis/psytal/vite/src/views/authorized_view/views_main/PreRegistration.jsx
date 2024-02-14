@@ -42,7 +42,7 @@ const handleRowClick = (items) => {
         <thead>
           <tr>
             <th className="text-left text-gray-700 bg-gray-200 p-2">Name</th>
-            <th className="text-left text-gray-700 bg-gray-200 p-2">Date of Submission</th>
+            <th className="text-center text-gray-700 bg-gray-200 p-2">Date of Submission</th>
             {/* <th className="text-left text-gray-700 bg-gray-200 p-2">Section</th> */}
             <th className="text-left text-gray-700 bg-gray-200 p-2">Status</th>
           </tr>
@@ -63,7 +63,7 @@ const handleRowClick = (items) => {
               <td className="text-left p-2">
                 <div className="m-2">{item.created_at}</div>
               </td>
-              <td className="text-left p-1">
+              <td className="text-left p-2">
                 <div className={`${
                     item.pre_reg_status === 'Accepted'
                     ? 'bg-green-600'
