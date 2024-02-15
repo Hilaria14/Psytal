@@ -70,14 +70,14 @@ export default function Classes(){
         <table className="table w-full table-striped text-gray-700 mt-5">
             <thead >
               <tr >
-                        <th className="text-left bg-gray-200 p-2">Class Code</th>
-                        <th className="text-left bg-gray-200 p-2">Course Code</th>
-                        <th className="bg-gray-200 text-left p-2">Course Title</th>
-                        <th className="bg-gray-200 text-left p-2">Semester</th>
-                        <th className="bg-gray-200 text-left p-2">Year</th> 
-                        <th className="bg-gray-200 text-left p-2">Section</th> 
-                        <th className="bg-gray-200 text-left p-2">Instructor</th>
-                        <th className="bg-gray-200 text-left p-2">Action</th>
+                        <th className="w-[10%] text-left bg-gray-200 p-2">Class Code</th>
+                        <th className="w-[10%] text-left bg-gray-200 p-2">Course Code</th>
+                        <th className="w-[25%] bg-gray-200 text-left p-2">Course Title</th>
+                        <th className="w-[10%] bg-gray-200 text-left p-2">Semester</th>
+                        <th className="w-[10%] bg-gray-200 text-left p-2">Year</th> 
+                        <th className="w-[10%] bg-gray-200 text-left p-2">Section</th> 
+                        <th className="w-[15%] bg-gray-200 text-left p-2">Instructor</th>
+                        <th className="w-[10%] bg-gray-200 text-left p-2">Action</th>
                         </tr>
                         </thead>
                     </table>

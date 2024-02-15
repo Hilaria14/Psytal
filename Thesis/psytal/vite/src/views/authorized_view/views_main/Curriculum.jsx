@@ -94,20 +94,20 @@ export default function Curriculum(){
             <table className="table w-full table-striped text-gray-700 mt-5" >
 		            <thead >
 		              <tr>
-                    <th className="text-center text-gray-700 bg-gray-200 p-2">Class Year</th>
-                    <th className="text-center text-gray-700 bg-gray-200 p-2">Semester</th>
-                    <th className="text-center text-gray-700 bg-gray-200 p-2">Course Code</th>
-                    <th className="text-center text-gray-700 bg-gray-200 p-2">Units</th>
-                    <th className="text-center text-gray-700 bg-gray-200 p-2">Course Title</th>
-                    <th className="text-center text-gray-700 bg-gray-200 p-2">Hours/Week</th>
-                    <th className="text-center text-gray-700 bg-gray-200 p-2">Lec/Lab</th>
-                    <th className="text-center text-gray-700 bg-gray-200 p-2">Pre-Requisite</th>
-                    <th className="text-center text-gray-700 bg-gray-200 p-2">Action</th>
+                    <th className="text-center w-[8%] text-gray-700 bg-gray-200 p-2">Class<br/> Year</th>
+                    <th className="text-center w-[10%] text-gray-700 bg-gray-200 p-2">Semester</th>
+                    <th className="text-center w-[10%] text-gray-700 bg-gray-200 p-2">Course<br/> Code</th>
+                    <th className="text-center w-[8%] text-gray-700 bg-gray-200 p-2">Units</th>
+                    <th className="text-center w-[25%] text-gray-700 bg-gray-200 p-2">Course Title</th>
+                    <th className="text-center w-[9%] text-gray-700 bg-gray-200 p-2">Hours/Week</th>
+                    <th className="text-center w-[10%] text-gray-700 bg-gray-200 p-2">Lec/Lab</th>
+                    <th className="text-center w-[10%] text-gray-700 bg-gray-200 p-2">Pre-Requisite</th>
+                    <th className="text-center w-[10%] text-gray-700 bg-gray-200 p-2">Action</th>
 		              </tr>
                 </thead>
                 </table>
                 </div>
-                <div className="w-full h-[500px] px-4 mx-auto  bg-white   pb-12  table-container overflow-y-auto">
+                <div className="w-full h-[400px] mx-auto  bg-white   pb-12  table-container overflow-y-auto">
                 <table className="table w-full table-striped text-gray-700 ">
                 <tbody>
                     {filteredData.map((curriculum, index) => (
@@ -115,15 +115,15 @@ export default function Curriculum(){
                         key={index} 
                         className={`${index % 2 === 0 ? 'odd:bg-green-100' : ''}`}
                       >
-                          <td className="text-center p-2">{curriculum.class_year}</td>
-                          <td className="text-center p-2">{curriculum.semester}</td>
-                          <td className="text-center p-2">{curriculum.course_code}</td>
-                          <td className="text-center p-2">{curriculum.units}</td>
-                          <td className="text-center p-2 overflow-hidden overflow-wrap break-word">{curriculum.course_title}</td>
-                          <td className="text-center p-2">{curriculum.hoursperWeek}</td>
-                          <td className="text-center p-2">{curriculum.course_type}</td>
-                          <td className="text-center p-2">{curriculum.preReq}</td>
-                          <td className= "flex items-center p-2">
+                          <td className="text-center w-[8%] p-2">{curriculum.class_year}</td>
+                          <td className="text-center w-[10%] p-2">{curriculum.semester}</td>
+                          <td className="text-center w-[10%] p-2">{curriculum.course_code}</td>
+                          <td className="text-center w-[8%] p-2">{curriculum.units}</td>
+                          <td className="text-center w-[25%] p-2 overflow-hidden overflow-wrap break-word">{curriculum.course_title}</td>
+                          <td className="text-center w-[9%] p-2">{curriculum.hoursperWeek}</td>
+                          <td className="text-center w-[10%] p-2">{curriculum.course_type}</td>
+                          <td className="text-center w-[10%] p-2">{curriculum.preReq}</td>
+                          <td className= "flex p-2">
                             <button onClick={() => handleEditClick(curriculum)}>
                               <img src={edit} alt='edit' className='h-5 w-5 cursor-pointer transform transition-transform hover:scale-125' />
                             </button>
