@@ -26,8 +26,8 @@ const slidesData = [
             <div className="bg-[#739072]/60 w-[100%] h-[100%] absolute inset-0 rounded-3xl"></div>
             <h6 className="text-3xl font-bold text-center z-10 relative">BSU Mission</h6>
             <div className="max-h-60 z-10 mt-5 relative">
-              <p className="text-2xl text-center">
-                <ul className="list-disc list-inside space-y-2">
+              <p className="text-2xl text-left ">
+                <ul className="list-disc list-inside space-y-2 ">
                   <li>Challenge Innovation</li>
                   <li>Advance Technology and Facilities</li>
                   <li>Revitalize Administration</li>
